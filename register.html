@@ -3,21 +3,35 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's eat</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header> 
-        <hgroup>                
-             <img src ="food pictures/LETS-EAT-display.jpeg" alt ="#">
-
-        </hgroup>
-        <nav>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="login.html">Login</a></li>
-               <input type="text" placeholder="Search..">
-            </ul>
-        </nav>
+    <header id ="top" class="top-header"> 
+        <div>
+            <div>
+               <div class="flex-container">
+                    <img  class = "logo responsive" src ="images/LETS-EAT-display.jpeg" alt ="logo fork and spoon">        
+                    <nav id="top-nav" class ="nav-tree responsive pull-right">
+                        <ul class ="topNavbar">
+                            <li class="nav-item"><a href="index.html">Home</a></li>
+                            <li class="nav-item"><a href="about.html">About</a></li>
+                            <li class="nav-item"><a href="login.html">Login</a></li>
+                        </ul>                                                    
+                    </nav>
+                 </div>        
+            </div>
+        </div>                 
+        <div class ="pull-right">
+            <form role="search" method="get" id="searchform" class="search-form" action="#">
+                <label class="" id="search-label" for="search-input">Search for:</label>                
+                <input type="search" required="" name="s" id="search-input" class="search-field" placeholder="e.g. pizza" value="">                
+                <input type="hidden" name="orderby" value="relevance">
+                <input type="hidden" name="post_type" value="post,page,guide">                
+                <button type="submit" class="button-search">
+                    <span class="search-text">Search</span>              
+                </button>              
+            </form>
+        </div>  
     </header>
     <div>
             <div>
@@ -32,9 +46,9 @@
     </div>
    <footer>
        <ul>
-           <a href="#"><img src="food pictures/if_facebook_272537.png" alt="facebook"></a>
-           <a href="#"><img src ="food pictures/174855.png" alt= "instagram"></a> 
-           <a href="#"><img src="food pictures/twitter-2672572_960_720.jpg" alt ="twitter"></a>
+           <a href="#"><img src="images/if_facebook_272537.png" alt="facebook"></a>
+           <a href="#"><img src ="images/174855.png" alt= "instagram"></a> 
+           <a href="#"><img src="images/twitter-2672572_960_720.jpg" alt ="twitter"></a>
        </ul>
         <nav>
           <h3>Discover us</h3>
