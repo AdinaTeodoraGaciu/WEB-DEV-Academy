@@ -1,172 +1,312 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's eat</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>  
-    <header id ="top" class="top-header"> 
-        <div>
-            <div>
-                <div class="flex-container">
-                        <img  class = "logo responsive" src ="images/LETS-EAT-display.jpeg" alt ="logo fork and spoon">        
-                        <nav id="top-nav" class ="nav-tree responsive pull-right">
-                            <ul class ="topNavbar">
-                               <li class="nav-item"><a  class ="active" href="index.html">Home</a></li>
-                               <li class="nav-item"><a href="about.html">About</a></li>
-                               <li class="nav-item"><a href="login.html">Login</a></li>
-                            </ul>   
-                                          
-                            
-                        </nav>
-                </div>
+<body id = "body">
+ <div  class="wrapper">
+        <header id ="top" class="main-header">
+            <a class ="site-logo"href="index.html">
+               <img class ="logo" src ="images/footer-logo.png" alt ="logo fork and spoon">
+            </a>
+            <div class="header-content">
+                <ul class = "nav">
+                   <li class="nav-item"><a href="index.html">Acasa</a></li>
+                   <li class="nav-item"><a href="about.html">Despre noi</a></li>
+                   <li class="nav-item"><a href="login.html">Login</a></li>
+                    <ul id="myCart"class="shop-bag">
+                        <li class="close-bag"><a href="shoppingCart.html" class="cart-button"><i class="fas fa-shopping-basket"></i></a></li>
+                        <li class="open-bag">
+                            <div class="cart-food">
+                                <div class="detail">
+                                    <img src="images/burger-cropped.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#.">Burger porc</a>
+                                        <p>1 x $35.00</p>
+                                    </div>
+                                </div>
+                                <a href="#." class="cross"><i class="fas fa-times"></i></a>
+                            </div>
+
+                            <div class="cart-food">
+                                <div class="detail">
+                                    <img src="images/fries.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#.">Cartofi prajiti </a>
+                                        <p>2 x $40.00</p>
+                                    </div>
+                                </div>
+                                <a href="#." class="cross"><i class="fas fa-times"></i></i></a>
+                            </div>
+
+                            <div class="sub-total">
+                                <span>SUBTOTAL: <strong>$115.00</strong></span>
+                                <div class="buttons">
+                                    <a href="#." class="view-cart">Vezi cos</a>
+                                    <a href="#." class="check-out">Cumpara</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </ul>
 
             </div>
-        </div>                 
-        <div class ="pull-right">
-                <form role="search" method="get" id="searchform" class="search-form" action="#">
-                    <label class="" id="search-label" for="search-input">Search for:</label>                
-                    <input type="search" required="" name="s" id="search-input" class="search-field" placeholder="e.g. pizza" value="">                
-                    <input type="hidden" name="orderby" value="relevance">
-                    <input type="hidden" name="post_type" value="post,page,guide">                
-                    <button type="submit" class="button-search">
-                      <span class="search-text">Search</span>              
-                    </button>              
-                 </form>
-               </div>  
-    </header>
-   <div class ="main">
-    <section class=""> 
-     <div class ="container">
-        <h1 class="container-title">What's on the menu ?</h1>
-        <div></div>
-        <div class="box">
-            <a href="#">
-                <img class ="box-image" src="images/comfort-food.jpg" alt ="comfort food">
-                <div> 
-                    <p>Classic, comforting dishes that lift your spirit<br>                    
-                    <span>View comfort food...</span>
-                    </p>
-                </div>           
-            </a>
-        </div>
-    </div>   
-    <div></div>
-    <div class="box">
-        <a href="">
-          <img src="images/wake-venue-food.jpg" alt ="office catering">
-          <div>
-              <span>View office catering...</span>
-         </div>
-        </a>  
-           
-    </div>
-    <div></div>
-    <div class="box">
-        <a href=""> 
-            <img src="images/PYOCOWAIG2.jpg" alt ="desserts">
-            <div>
-                <p>Sweet delights to lighten your day</p>
-                <span>View desserts and sweets...</span>
-            </div>
-        </a>     
-    </div>
-    <div></div>
-    <div class="box">
-        <a href="">
-            <img src="images/Screen-Shot-2018-11-02-at-11.04.52-AM.png.webp" alt ="perfect">
-            <div>
-                <p>Need an excuse to get the gang together? Look no further</p>
-                <span>View perfect for sharing...</span>
-            </div>         
-        </a> 
-    </div>
-    <div></div>
-    <div class="box">
-        <a href="">     
-             <img src="images/healthy-salmon-collection-main-image.jpg" alt ="healthy">
-             <div>
-                 <p>Delicious dishes to put spring on your plate</p>
-                <span>View healthy options...</span>
-             </div>            
-        </a>     
-    </div>
-    <div></div>
-    <div class="box">
-        <a href="">
-           <img src="images/smoky-carrot-dogs-with-nacho-sauce-1706p138.jpg" alt ="budget">
-           <div>
-               <p>Great food every day  </p>
-               <span>View wallet friendly dishes..</span>
-          </div>
-        </a>        
-    </div>
-    <div></div>
-        <div class="box">
-            <a href="">
-                <img src="images/10-Italian-Fun-Facts-The-Food-Fashion-and-Culture-of-Italy.jpg" alt ="italian">
-                <div> 
-                <p>Discover your new favourite with our food experts </p>
-                <span>View our choices..</span>
+        </header>
+        <div class="banner">
+               <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img class="slider-img" src="images/pizza_golosa.jpg">
                 </div>
-            </a>        
+
+                <div class="mySlides fade">
+                    <img class="slider-img" src="images/burger-cropped.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="slider-img" src="images/cesarsalad.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img class="slider-img" src="images/chesecakeCherry.jpg">
+                </div>
+
+            <br>
+            <!-- The dots/circles -->
+            <div class="slider-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
         </div>
-     <div></div>   
-     <hr>
-     </div> 
-   </section> 
-   <section id="rating" class="rating-section">
-   <h1 class="section-title">Loved by you , delivered by us</h1>
-   <hr>
-   </section> 
-   <section id="" class="options-section">
-    <h1 class="section-title">Need more options?</h1>
-        <div>
-            <ul class ="country-speciality">
-                <a href ="">Italian</a>
-                <a href ="">Chinese</a>
-                <a href ="">Halal</a>
-                <a href ="">Thai</a>
-                <a href ="">Greek</a>
-                <a href ="">Vegetarian</a>
-            </ul>
+     <!--/.banner-->
+        <div class ="main-content">
+            <div class="options-title">Ce mancam azi?</div>
+            <div class="content-menu">
+                <div class="card-menu">
+                    <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class="item-link">
+                                <div class="item-image">
+                                    <img src="images/comfort-food2.jpg">
+                                </div>
+                                <div class="item-content">
+                                    <h4>Comfort food</h4>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class=item-link">
+                                <div class="item-image">
+                                    <img src="images/office-catering-london.jpg">
+                                </div>
+                                <div class="item-content">
+                                    <h4>La birou</h4>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class="column-link">
+                                <div class="item-image">
+                                    <img src="images/deserts12.jpg">
+                                </div>
+                                <div class="item-content">
+                                    <h4>Desert</h4>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class="item-link">
+                                <div class="item-image">
+                                    <img src="images/healthy-salmon-collection-main-image.jpg">
+                                </div>
+                                <div class="item-content">
+                                    <h4>Alege sanatos</h4>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class="item-link">
+                                <div class="item-image">
+                                    <img src="images/Screen-Shot-2018-11-02-at-11.04.52-AM.png.webp">
+                                </div>
+                                <div class="item-content">
+                                    <h4>Cu prietenii</h4>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class="item-link">
+                                <div class="item-image">
+                                    <img src="images/10-Italian-Fun-Facts-The-Food-Fashion-and-Culture-of-Italy.jpg">
+                                </div>
+                                <div class="item-content">
+                                    <h4>Ce am ales noi</h4>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                 </div>
+            </div>
+            <div class="kitchen-options">
+                <div class="options-title">Bucatarii si feluri de mancare populare</div>
+                <div class="content-menu">
+                    <ul class ="country-speciality">
+                        <li class="pill-box"><a href ="">Romaneasca</a> </li>
+                        <li class="pill-box"><a href ="">Chinezeasca</a></li>
+                        <li class="pill-box"><a href ="">Halal</a></li>
+                        <li class="pill-box"><a href ="">Thailandeza</a></li>
+                        <li class="pill-box"><a href ="">Greaca</a></li>
+                        <li class="pill-box"><a href ="">Vegetariana</a></li>
+                        <li class="pill-box"><a href ="">Pizza</a></li>
+                        <li class="pill-box"><a href ="">Sushi</a></li>
+                        <li class="pill-box"><a href ="">Mexicana</a></li>
+                        <li class="pill-box"><a href ="">Desert</a></li>
+                        <li class="pill-box"><a href ="">Japoneza</a></li>
+                        <li class="pill-box"><a href ="">Fast-food</a></li>
+                        <li class="pill-box"><a href ="">Italiana</a></li>
+                        <li class="pill-box"><a href ="">Vegetarian</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="options-title">Preferate de voi , livrate de noi</div>
+            <div class="content-menu">
+                <div class="card-menu">
+                    <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class="item-link">
+                                <div class="item-image">
+                                    <img src="images/this-is-what-kfc-is-famous.jpg">
+                                </div>
+                                <div class="item-content">
+                                    <h4>KFC</h4>
+                                    <p>Gustul random care nu dezamageste!</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                   <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class="item-link">
+                                <div class="item-image">
+                                    <img src="images/greekpie.jpg">
+                                </div>
+                                <div class="item-content">
+                                    <h4>El Greco</h4>
+                                    <p>Mancare greceasca pe bune</p>
+                                </div>
+                             </a>
+                        </article>
+                   </div>
+                    <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class="item-link">
+                                <div class="item-image">
+                                    <img src="images/pizza2.jpg">
+                                </div>
+                                <div class="item-content">
+                                    <h4>Pizza Ibiza</h4>
+                                    <p>Gustul random care nu dezamageste!</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class="item-link">
+                                <div class="item-image">
+                                    <img src="images/burgerpui.jpg">
+                                </div>
+                                <div class="item-content">
+                                    <h4>Tiffany Bistro</h4>
+                                    <p>Burgers and more </p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class="item-link">
+                                <div class="item-image">
+                                    <img src="images/costite.jpg">
+                                </div>
+                                <div class="item-content">
+                                    <h4>The Steak House</h4>
+                                    <p>Gratarul din orasul tau</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="column-item">
+                        <article class="card-item">
+                            <a href="#" class="item-link">
+                                <div class="item-image">
+                                    <img src="images/greek-pork-gyros-with-fried-potatoes-and-sauce.jpg">
+                                </div>
+                                <div class="item-content">
+                                    <h4>Vatra satului</h4>
+                                    <p>Ca la mama acasa.</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        <footer  class="main-footer">
+            <div class ="footer-widget">
+                <h3 class ="footer-widget-title">Despre noi</h3>
+                <ul class= "footer-discover">
+                    <li><a href="about.html"> </a></li>
+                    <li><a href="#top">Cariere</a></li>
+                    <li><a href="#top">Deveniti partener</a></li>
+                </ul>
+            </div>
+            <div class ="footer-widget">
+                <h3 class ="footer-widget-title">Legal</h3>
+                <ul class="footer-legal">
+                    <li><a href="#top">Termeni si conditii</a></li>
+                    <li><a href="#top">Confidentialitate</a></li>
+                </ul>
+            </div>
+            <div class ="footer-widget">
+                <h3 class ="footer-widget-title">Ajutor</h3>
+                <ul class= "footer-help">
+                    <li><a href="#top">Intrebari frecvente</a></li>
+                    <li><a href="#top">Contactati-ne</a></li>
+                </ul>
+
+            </div>
+           <div class="footer-widget">
+               <h3 class ="footer-widget-title"> Urmariti-ne</h3>
+               <a class ="site-logo"href="index.html">
+                   <img class ="footer-logo" src ="images/footer-logo.png" alt ="logo fork and spoon">
+               </a>
+               <div class="footer-widget-social-icons">
+                   <a href="#"><i class="fab fa-facebook social-icons"></i></a>
+                   <a href="#"><i class="fab fa-instagram social-icons"></i></a>
+                   <a href="#"><i class="fab fa-twitter social-icons"></i></a>
+               </div>
+           </div>
+        </footer>
+        <div class="copyright">
+            <p class="copyright">Copyright  2019 Adina</p>
         </div>
-   <hr>
-   </section> 
-</div>    
-   <footer id ="footer" class="footer-section">
-       <ul class="social-icons">
-           <a href="#"><img src="images/if_facebook_272537.png" alt="facebook"></a>
-           <a href="#"><img src ="images/174855.png" alt= "instagram"></a> 
-           <a href="#"><img src="images/twitter-2672572_960_720.jpg" alt ="twitter"></a>
-       </ul>
-        <nav class ="footer-discover-nav">
-          <h3>Discover us</h3>
-          <ul class= "footer-discover">
-            <li><a href="#top">Become a rider</a></li>
-            <li><a href="#top">Careers</a></li>
-            <li><a href="#top">Restaurant signup</a></li>
-            
-          </ul>
-        </nav>
-        <nav class ="footer-legal-nav">
-          <h3>Legal</h3>
-          <ul class="footer-legal">
-            <li><a href="#top">Terms and conditions</a></li>
-            <li><a href="#top">Privacy and cookies</a></li>
-            <li><a href="#top">Modern Slavery Statement </a></li>
-          </ul>
-        </nav>
-        <section>
-          <h3>Help</h3>
-          <ul class= "footer-help">
-            <li><a href="#top">FAQ</a></li>
-            <li><a href="#top">Site map</a></li>
-            <li><a href="#top">Contact us</a></li>
-          </ul>
-        </section>
-        <p class="copyright">Copyright © 2019 Adina</p>
-      </footer>    
+
+    <script src="js/main.js"> </script>
+
+ </div>
 </body>
 </html>

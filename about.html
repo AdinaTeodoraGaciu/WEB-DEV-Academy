@@ -3,39 +3,55 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's eat</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-        <header id ="top" class="top-header"> 
-                <div>
-                    <div>
-                        <div class="flex-container">
-                                <img  class = "logo responsive" src ="images/LETS-EAT-display.jpeg" alt ="logo fork and spoon">        
-                                <nav id="top-nav" class ="nav-tree responsive pull-right">
-                                    <ul class ="topNavbar">
-                                       <li class="nav-item"><a href="index.html">Home</a></li>
-                                       <li class="nav-item"><a  class ="active" href="about.html">About</a></li>
-                                       <li class="nav-item"><a href="login.html">Login</a></li>
-                                    </ul>   
-                                                  
-                                    
-                                </nav>
+<header id ="top" class="main-header">
+    <a class ="site-logo"href="index.html">
+        <img class ="logo" src ="images/footer-logo.png" alt ="logo fork and spoon">
+    </a>
+    <div class="header-content">
+        <ul class = "nav">
+            <li class="nav-item"><a href="index.html">Acasa</a></li>
+            <li class="nav-item"><a href="about.html">Despre noi</a></li>
+            <li class="nav-item"><a href="login.html">Login</a></li>
+            <ul class="shop-bag">
+                <li class="close-bag"><a href="shoppingCart.html" class="cart-button"><i class="fas fa-shopping-basket"></i></a></li>
+                <li class="open-bag">
+                    <div class="cart-food">
+                        <div class="detail">
+                            <img src="images/burger-cropped.jpg" alt="">
+                            <div class="text">
+                                <a href="#.">Burger porc</a>
+                                <p>1 x $35.00</p>
+                            </div>
                         </div>
-        
+                        <a href="#." class="cross"><i class="fas fa-times"></i></a>
                     </div>
-                </div>                 
-                <div class ="pull-right">
-                        <form role="search" method="get" id="searchform" class="search-form" action="#">
-                            <label class="" id="search-label" for="search-input">Search for:</label>                
-                            <input type="search" required="" name="s" id="search-input" class="search-field" placeholder="e.g. pizza" value="">                
-                            <input type="hidden" name="orderby" value="relevance">
-                            <input type="hidden" name="post_type" value="post,page,guide">                
-                            <button type="submit" class="button-search">
-                              <span class="search-text">Search</span>              
-                            </button>              
-                         </form>
-                       </div>  
-            </header>
+                    <div class="cart-food">
+                        <div class="detail">
+                            <img src="images/fries.jpg" alt="">
+                            <div class="text">
+                                <a href="#.">Cartofi prajiti </a>
+                                <p>2 x $40.00</p>
+                            </div>
+                        </div>
+                        <a href="#." class="cross"><i class="fas fa-times"></i></i></a>
+                    </div>
+                    <div class="sub-total">
+                        <span>SUBTOTAL: <strong>$115.00</strong></span>
+                        <div class="buttons">
+                            <a href="#." class="view-cart">Vezi cos</a>
+                            <a href="#." class="check-out">Cumpara</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    </div>
+</header>
+
     <section>
         <nav>
             <ul>
@@ -67,39 +83,48 @@
                 Every consumer’s version of amazing is different, and our job is to ensure that they enjoy what they want, when they want it, where they want it.</p>
         </div>
     </article>
-   <footer>
-       <ul>
-           <a href="#"><img src="images/if_facebook_272537.png" alt="facebook"></a>
-           <a href="#"><img src ="images/174855.png" alt= "instagram"></a> 
-           <a href="#"><img src="images/twitter-2672572_960_720.jpg" alt ="twitter"></a>
-       </ul>
-        <nav>
-          <h3>Discover us</h3>
-          <ul>
-            <li><a href="/">Become a rider</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Restaurant signup</a></li>
-            
-          </ul>
-        </nav>
-        <nav>
-          <h3>Legal</h3>
-          <ul>
-            <li><a href="#">Terms and conditions</a></li>
-            <li><a href="#">Privacy and cookies</a></li>
-            <li><a href="#">Modern Slavery Statement </a></li>
+<footer  class="main-footer">
+    <div class ="footer-widget">
+        <h3 class ="footer-widget-title">Despre noi</h3>
+        <ul class= "footer-discover">
+            <li><a href="about.html"> </a></li>
+            <li><a href="#top">Cariere</a></li>
+            <li><a href="#top">Deveniti partener</a></li>
         </ul>
-        </nav>
-        <section>
-          <h3>Help</h3>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Site map</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-        </section>
-        <p class="copyright">Copyright © 2019 Adina</p>
-      </footer>
-      
+    </div>
+    <div class ="footer-widget">
+        <h3 class ="footer-widget-title">Legal</h3>
+        <ul class="footer-legal">
+            <li><a href="#top">Termeni si conditii</a></li>
+            <li><a href="#top">Confidentialitate</a></li>
+        </ul>
+    </div>
+    <div class ="footer-widget">
+        <h3 class ="footer-widget-title">Ajutor</h3>
+        <ul class= "footer-help">
+            <li><a href="#top">Intrebari frecvente</a></li>
+            <li><a href="#top">Contactati-ne</a></li>
+        </ul>
+
+    </div>
+    <div class="footer-widget">
+        <h3 class ="footer-widget-title"> Urmariti-ne</h3>
+        <a class ="site-logo"href="index.html">
+            <img class ="footer-logo" src ="images/footer-logo.png" alt ="logo fork and spoon">
+        </a>
+        <div class="footer-widget-social-icons">
+            <a href="#"><i class="fab fa-facebook social-icons"></i></a>
+            <a href="#"><i class="fab fa-instagram social-icons"></i></a>
+            <a href="#"><i class="fab fa-twitter social-icons"></i></a>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    <p class="copyright">Copyright  2019 Adina</p>
+</div>
+
+<script src="js/main.js"> </script>
+
+
 </body>
 </html>
