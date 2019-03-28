@@ -2,7 +2,9 @@
 /* =================================
   Base Element Styles
 ==================================== */
-
+html {
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
 }
@@ -23,7 +25,6 @@ body {
     flex: 1;
 }
 .main-header {
-    display: none;
     margin-right: 0px;
     background-color: #1d1d2c;
     width:100%;
@@ -150,7 +151,7 @@ form.search button:hover {
 }
 .footer-widget-title{
     margin-bottom: auto;
-   padding-bottom: 2%;
+    padding-bottom: 2%;
 }
 
 .footer-widget-social-icons {
@@ -172,7 +173,6 @@ form.search button:hover {
     width: 100%;
     position: relative;
     text-align:center;
-    margin-top: 30px;
 }
 .slider-img{
     width: 100%;
@@ -182,7 +182,6 @@ form.search button:hover {
 .slider-dots{
     text-align: center;
 }
-
 
 .dot:active, .dot:hover {
     background-color: #717171;
@@ -222,7 +221,50 @@ form.search button:hover {
 .search-location {
     text-align: center;
     postion:relative;
+}
 
+
+.column-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    min-width:200px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    margin: 0 10px 30px;
+    background: #fff 50%;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+    transition: all .5s ease;
+}
+
+.card-item img {
+    height: 100px;
+    background: #c5d2d9 no-repeat 50%;
+    background-size: cover;
+    text-align: center;
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    min-width: 200px; /* Set a small width */
+}
+
+.column-item:hover {
+    transform: scale(1.1);
+    transition:1s transform;
+}
+
+
+#modal_wrapper_login, #modal_wrapper_register{
+    display:none;
+    background:rgba(0,0,0,0.9);
+    position:fixed;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    z-index:10;
 }
 
 
@@ -236,6 +278,7 @@ form.search button:hover {
     .col-item,
     .main-footer{
         display: flex;
+
     }
     .main-header {
         flex-direction: row;
@@ -245,6 +288,7 @@ form.search button:hover {
     .nav {
         margin-left: auto;
     }
+
     .main-footer {
         flex-direction: row;
         justify-content: space-between ;
@@ -292,21 +336,11 @@ form.search button:hover {
         justify-content: center;
 
     }
-   .footer-widget-title{
-       margin-bottom: auto;
-   }
+    .footer-widget-title{
+        margin-bottom: auto;
+    }
 
 }
-.container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 0 0;
-    flex-direction: row;
-    justify-content: center;
-    width: 70%;
-}
-
 .card-menu {
     position: relative;
     display: flex;
@@ -377,6 +411,8 @@ form.search button:hover {
     justify-content: space-between;
     text-align: center;
 }
+
+
 
 .content-menu {
     display: flex;
@@ -843,13 +879,11 @@ shopping cart Styles
 .added {
     margin: 0 -50px 0 0 !important;
 }
-.limiter {
-    width: 100%;
-    margin: 0 auto;
-}
+
 
 .container-login {
-    width: 100%;
+    width: 60%;
+    margin:0 auto;
     min-height: 100vh;
     display: -webkit-box;
     display: -webkit-flex;
@@ -859,18 +893,17 @@ shopping cart Styles
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;;
 }
 
 .wrap-login {
-    width: 680px;
+    min-width: 680px;
     background: #fff;
     border-radius: 10px;
     position: relative;
+    padding: 2%;
 }
 
 .login-form {
@@ -891,15 +924,11 @@ shopping cart Styles
 .btn-google {
     font-size: 18px;
     line-height: 1.2;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    width: calc((100% - 20px) / 2);
+    width: calc((100% - 10px) / 2);
     height: 70px;
     border-radius: 10px;
     box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
@@ -918,7 +947,7 @@ shopping cart Styles
 .btn-google::before,
 .btn-face::before {
     content: "";
-    display: block;
+    display: inline-block;
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -1151,3 +1180,10 @@ shopping cart Styles
 }
 
 .bo1 {border-bottom: 1px solid #999999;}
+
+#close_login:hover{
+    cursor:pointer;
+    color:red;
+    transform:rotate(360deg);
+    transition:2s transform;
+}
