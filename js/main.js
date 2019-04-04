@@ -73,3 +73,30 @@ window.onclick = function(event){
 close_register.onclick = function(event){
     getTarget(event,"close_register","none");
 };
+
+document.querySelector('#comfortFood').onclick = function(food){
+    document.querySelector('#kitchens').style.display = 'none';
+    document.querySelector('#favorites').style.display = 'none';
+    document.querySelector('#options').style.display='none';
+    let xhrRequest = new XMLHttpRequest();
+    xhrRequest.onreadystatechange = function(){
+        if(xhrRequest.readyState === 4 && xhrRequest.status===200){
+            let jsonData = JSON.parse(xhrRequest.responseText);
+            if(jsonData.restaurants) {
+                for (let i = 0; i <= jsonData.restaurants.length; i++) {
+                    //jsonData.forEach(function(data){
+                    document.querySelector('#restaurantsContainer').innerHTML +=
+                        "<div class='column-item'>" +
+                        "<article class='card-item'>" +
+                        "<div class='item-content'><h4>" + jsonData.restaurants[i].name + "</h4></div>" +
+                        "<div class='item-image'><img src='" + jsonData.restaurants[i].icon + "'></div>" +
+                        "<div class = 'item-content'><p>" + jsonData.restaurants[i].deal + "</p> </div>" + "</article> </div>"
+                }
+
+            }
+        }
+    };
+    xhrRequest.open('GET','http://localhost:63342/eat/js/restaurants.json',true);
+    xhrRequest.send();
+
+};

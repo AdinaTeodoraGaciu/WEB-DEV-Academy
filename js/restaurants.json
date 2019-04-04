@@ -1,0 +1,54 @@
+{"restaurants":[
+  {
+    "name":"Pizza Ibiza",
+    "id":"gusto",
+    "categories":["pizza","pasta","fast-food","italiana","comfort-food"],
+    "icon":"images/pizzaIbiza.jpg",
+    "deal":"La 3 pizza primesti o portie de paste!",
+    "menu":
+           {"Pizza":
+                    [{
+                      "Margherita":"aluat, sos rosii, mozzarella",
+                      "Calzone":"aluat, sos rosii,mozzarella, masline, sunca presata, ardei gras",
+                      "Gusto":"aluat, sos rosii,mozzarella, masline, salam picant, ciuperci"
+                    }],
+
+            "Paste":{"Carbonara":"penne, smantana,ou, bacon",
+                     "Bolognese":"penne, sos bolognese",
+                     "Arrabbiata":"penne,ardei iute, ulei masline"
+                   }
+           }
+  },
+  {
+    "name":"KFC",
+    "id":"kfc",
+    "categories":["fast-food","prietenii","birou","comfort-food"],
+    "icon":"images/bucketcorbin.jpg",
+    "deal":"Cartofi prajiti la numai 2 lei!",
+    "menu":
+          {"Smart":
+                 {"Box":"nuggets, cartofi prajiti, sos Glen",
+                  "Menu":"Nugget Sandwich, cartofi prajiti, cola mare"
+                }
+          }
+  },
+  {
+    "name":"El Greco",
+    "id":"greco",
+    "categories":["friptura","sanatos","greceasca"],
+    "icon":"images/elgreco.jpg",
+    "deal":"Livrare gratuita la minim 30 de lei comanda!",
+    "menu":
+          {"Peste":
+                {"Somon ":{"":"somon, legume natur, foccacia","Pret":"35.40"},
+                  "Pastrav":"pastrav la gratar, orez salbatic"
+                },
+           "Porc":{"Escalop":"cotlet de porc, sos rosii cu ciuperci, foccacia",
+                    "Snitel":"muschi de porc,parmezan , cartofi prajiti",
+                    "Ceafa":"ceafa pe gratar, sos trufe , "
+                  }
+          }
+  }
+
+
+]}

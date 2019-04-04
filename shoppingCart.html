@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
+<!-- Modal window -->
+<div id="modal_wrapper_cart">
+    <div class="container-login">
+        <div class="wrap-cart">
+            <h1><span class="right" id="close_cart">&times;</span></h1>
+            <h1 id="cart_head">Va rugam sa introduceti adresa</h1>
+            <form>
+                <label for="address" id="address">Adresa:</label>
+                <input type="text" id="user_address"><br><br>
+                <button id="cart_comanda" type="button" class="btn">Adaugare adresa</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 <body id="top">
+
+
+
 <header class="main-header">
         <a class ="site-logo"href="index.html">
             <img class ="logo" src ="images/footer-logo.png" alt ="logo fork and spoon">
@@ -61,6 +81,7 @@
     </div>
 </div>
 <div class="container">
+
     <section id="cart">
         <article class="product">
             <header>
@@ -74,11 +95,11 @@
                 <p>Aluat dospit cu maia , salam de sibiu, masline , mozzarella </p>
             </div>
             <footer class="content">
-                <span class="qt-minus">-</span>
-                <span class="qt">2</span>
-                <span class="qt-plus">+</span>
-                <h2 class="full-price">
-                    16.00 lei
+                <span id="qt-minus1" class="qt-minus">-</span>
+                <span id="qt-1" class="qt">1</span>
+                <span id="qt-plus1" class="qt-plus">+</span>
+                <h2 id="full-price1" class="full-price">
+                    10.00 lei
                 </h2>
             </footer>
         </article>
@@ -94,11 +115,11 @@
                 <p>Chifla din aluat dospit cu maia, carne porc, branza cheddar,unt</p>
             </div>
             <footer class="content">
-                <span class="qt-minus">-</span>
-                <span class="qt">1</span>
-                <span class="qt-plus">+</span>
-                <h2 class="full-price">
-                    32.50 Lei
+                <span id="qt-minus2" class="qt-minus">-</span>
+                <span id="qt-2" class="qt">1</span>
+                <span id="qt-plus2" class="qt-plus">+</span>
+                <h2 id="full-price2" class="full-price">
+                    15.00 lei
                 </h2>
             </footer>
         </article>
@@ -110,15 +131,15 @@
                 </a>
             </header>
             <div class="content">
-                <h1>Ciorba de cartofi cu ajumatura</h1>
+                <h1>Ciorba de cartofi cu afumatura</h1>
                 <p>Afumatura de casa, cartofi, patrunjel, smantana</p>
             </div>
             <footer class="content">
-                <span class="qt-minus">-</span>
-                <span class="qt">3</span>
-                <span class="qt-plus">+</span>
-                <h2 class="full-price">
-                    8.30 Lei
+                <span id="qt-minus3" class="qt-minus">-</span>
+                <span id="qt-3" class="qt">1</span>
+                <span id="qt-plus3" class="qt-plus">+</span>
+                <h2 id="full-price3" class="full-price">
+                    20.00 lei
                 </h2>
             </footer>
         </article>
@@ -128,15 +149,9 @@
 </div>
 
 <div id="cart-checkout">
-    <div class="container clearfix">
-        <div class="left">
-            <h2 class="subtotal">Subtotal: <span>89.40</span></h2>
-            <h3 class="shipping">Transport: <span>5.00</span></h3>
-        </div>
-
-        <div class="right">
-            <h1 class="total">Total: <span>94.40 </span></h1>
-            <a class="btn">Trimite comanda</a>
+    <div class="right">
+            <h1 class="total">Total: <span id="total">0.00 </span></h1>
+            <a id="cart_btn" class="btn">Trimite comanda</a>
         </div>
 
     </div>
@@ -180,7 +195,7 @@
 <div class="copyright">
     <p class="copyright">Copyright  2019 Adina</p>
 </div>
-<script src="js/shoppingCart.js"> </script>
+<script src="js/Cart.js"> </script>
 </body>
 </html>
 
