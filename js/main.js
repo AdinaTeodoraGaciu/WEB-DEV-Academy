@@ -3,10 +3,9 @@ var slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     slideIndex++;
@@ -23,6 +22,14 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 // Modal script
+
+function classToggle() {
+    const navs = document.querySelectorAll('.nav-item')
+
+    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
+document.querySelector('.toggle')
+    .addEventListener('click', classToggle);
 
 const login_btn = document.querySelector('#login_btn');
 const modal_login = document.querySelector('#modal_wrapper_login');
@@ -73,30 +80,63 @@ window.onclick = function(event){
 close_register.onclick = function(event){
     getTarget(event,"close_register","none");
 };
+const jsonData = 'js/restaurants.json';
+ fetch(jsonData)
+    .then(function (res) {
+        return res.json();
+    })
+    .then (function(jsonData){
+        restaurants = jsonData;
+        /*const gusto = document.querySelector('#gusto');
+         if(gusto) {
+         gusto.onclick = () => {
+         console.log(jsonData.restaurants);
 
-document.querySelector('#comfortFood').onclick = function(food){
+
+         }
+         }*/
+    })
+
+function displayRestaurants (restaurants){
     document.querySelector('#kitchens').style.display = 'none';
     document.querySelector('#favorites').style.display = 'none';
-    document.querySelector('#options').style.display='none';
-    let xhrRequest = new XMLHttpRequest();
-    xhrRequest.onreadystatechange = function(){
-        if(xhrRequest.readyState === 4 && xhrRequest.status===200){
-            let jsonData = JSON.parse(xhrRequest.responseText);
-            if(jsonData.restaurants) {
-                for (let i = 0; i <= jsonData.restaurants.length; i++) {
-                    //jsonData.forEach(function(data){
-                    document.querySelector('#restaurantsContainer').innerHTML +=
-                        "<div class='column-item'>" +
-                        "<article class='card-item'>" +
-                        "<div class='item-content'><h4>" + jsonData.restaurants[i].name + "</h4></div>" +
-                        "<div class='item-image'><img src='" + jsonData.restaurants[i].icon + "'></div>" +
-                        "<div class = 'item-content'><p>" + jsonData.restaurants[i].deal + "</p> </div>" + "</article> </div>"
-                }
+    document.querySelector('#options').style.display = 'none';
+    if(restaurants) {
+        for (let i = 0; i < restaurants.restaurants.length; i++) {
+            document.querySelector('#restaurantsContainer').innerHTML +=
+                `<div class='column-item' id='${restaurants.restaurants[i].id}' onclick ="displayMenu(restaurants)"'>
+                            <article class='card-item'>
+                                <div class='item-content'><h4> ${restaurants.restaurants[i].name}</h4></div>
+                                    <div class='item-image'><img src='${restaurants.restaurants[i].icon}'></div>
+                                     <div class = 'item-content'><p>" ${restaurants.restaurants[i].deal} </p> </div></article> </div>`
 
-            }
         }
-    };
-    xhrRequest.open('GET','http://localhost:63342/eat/js/restaurants.json',true);
-    xhrRequest.send();
 
-};
+    }
+
+}
+
+function displayMenu(restaurants){
+    if(restaurants){
+      for (let i =0;  i < restaurants.restaurants.length; i++) {
+          console.log(restaurants.restaurants[i].id);
+          switch (restaurants.restaurants[i].id){
+              case 'gusto':
+                  document.querySelector('#menuContainer').innerHTML +=
+                      `<h4>${restaurants.restaurants[i].menu.Paste}</h4>`;
+                  break;
+console.log(restaurants.restaurants[i].menu)
+          }
+
+            document.querySelector('#menuContainer').innerHTML +=
+                `<div class='column-item' id='${restaurants.restaurants[i].id}'>
+                            <article class='card-item'>
+                                <div class='item-content'><h4> ${restaurants.restaurants[i].menu[i].Paste}</h4></div>
+                                    <div class='item-image'><img src='${restaurants.restaurants[i].icon}'></div>
+                                     <div class = 'item-content'><p>" ${restaurants.restaurants[i].deal} </p> </div></article> </div>`
+        }
+
+
+    }
+
+}

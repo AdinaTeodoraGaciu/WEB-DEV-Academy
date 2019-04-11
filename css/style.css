@@ -304,15 +304,25 @@ form.search button:hover {
         display: flex;
 
     }
+
     .main-header {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     .nav {
+        flex-direction: column;
         margin-left: auto;
     }
-
+    .nav .nav-item{
+        margin-left: 0;
+    }
+   .toggle{
+       align-self: flex-start;
+       display: initial;
+       position: absolute;
+       cursor: pointer;
+   }
     .main-footer {
         flex-direction: row;
         justify-content: space-between ;

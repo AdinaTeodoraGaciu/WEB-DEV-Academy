@@ -8,16 +8,48 @@
     "menu":
            {"Pizza":
                     [{
-                      "Margherita":"aluat, sos rosii, mozzarella",
-                      "Calzone":"aluat, sos rosii,mozzarella, masline, sunca presata, ardei gras",
-                      "Gusto":"aluat, sos rosii,mozzarella, masline, salam picant, ciuperci"
-                    }],
+                      "denumire":"Margherita",
+                      "compozitie":"aluat, sos rosii, mozzarella",
+                      "pret":"23.00",
+                      "img":"images/pizza.jpg"
+                     },
+                      {
+                        "denumire":"Calzone",
+                        "compozitie":"aluat, sos rosii,mozzarella, masline, sunca presata, ardei gras",
+                        "pret":"25.00",
+                        "img":"images/pizza.jpg"
+                      },
+                      {
+                        "denumire": "Gusto",
+                        "compozitie":"aluat, sos rosii,mozzarella, masline, salam picant, ciuperci",
+                        "pret":"20.00",
+                        "img":"images/pizza.jpg"
+                      }
+                    ],
 
-            "Paste":{"Carbonara":"penne, smantana,ou, bacon",
-                     "Bolognese":"penne, sos bolognese",
-                     "Arrabbiata":"penne,ardei iute, ulei masline"
-                   }
-           }
+            "Paste":[
+                    {
+                      "denumire": "Carbonara",
+                      "compozitie":"penne, smantana,ou, bacon",
+                      "pret":"27.00",
+                      "img":"images/paste.jpg"
+                    },
+                    {
+                      "denumire": "Bolognese",
+                      "compozitie":"penne, sos bolognese",
+                      "pret":"30.00",
+                      "img":"images/paste.jpg"
+                    },
+                    {
+                      "denumire": "Arrabbiata",
+                      "compozitie":"penne,ardei iute, ulei masline",
+                      "pret":"25.00",
+                      "img":"images/paste.jpg"
+                    }
+
+
+            ]}
+
   },
   {
     "name":"KFC",
@@ -27,9 +59,19 @@
     "deal":"Cartofi prajiti la numai 2 lei!",
     "menu":
           {"Smart":
-                 {"Box":"nuggets, cartofi prajiti, sos Glen",
-                  "Menu":"Nugget Sandwich, cartofi prajiti, cola mare"
-                }
+                [{
+                  "denumire":"Student Box",
+                  "compozitie":"crispy strips, cartofi prajiti, cola",
+                  "pret":"26.00",
+                  "img":"images/student.jpg"
+                },
+                  {
+                    "denumire":"Corbin",
+                    "compozitie":"crispy, strips, cartofi prajiti, sos Glen, cola",
+                    "pret":"45.00",
+                    "img":"images/bucketcorbin.jpg"
+                  }
+                ]
           }
   },
   {
@@ -38,17 +80,40 @@
     "categories":["friptura","sanatos","greceasca"],
     "icon":"images/elgreco.jpg",
     "deal":"Livrare gratuita la minim 30 de lei comanda!",
-    "menu":
-          {"Peste":
-                {"Somon ":{"":"somon, legume natur, foccacia","Pret":"35.40"},
-                  "Pastrav":"pastrav la gratar, orez salbatic"
+    "menu": {
+              "Peste": [
+                {
+                  "denumire": "Somon ",
+                  "compozitie": "somon, legume natur, foccacia",
+                  "pret": "35.00",
+                  "img": "images/somon.jpg"
                 },
-           "Porc":{"Escalop":"cotlet de porc, sos rosii cu ciuperci, foccacia",
-                    "Snitel":"muschi de porc,parmezan , cartofi prajiti",
-                    "Ceafa":"ceafa pe gratar, sos trufe , "
+                {
+                  "denumire": "Pastrav",
+                  "compozitie": "pastrav la gratar, orez salbatic",
+                  "pret": "45.00",
+                  "img": "images/pastrav.jpg"
+                }
+              ],
+            "Porc":[
+                  {"denumire": "Escalop",
+                  "compozitie": "cotlet de porc, sos rosii cu ciuperci, foccacia",
+                  "pret": "35.00",
+                  "img": "images/somon.jpg"
+                  },
+                  {
+                    "denumire": "Snitel",
+                    "compozitie": "muschi de porc,parmezan , cartofi prajiti",
+                    "pret": "35.00",
+                    "img": "images/somon.jpg"
                   }
-          }
+              ]
+       }
+
   }
 
 
 ]}
+
+
+

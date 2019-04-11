@@ -112,8 +112,10 @@
         <a class ="site-logo" href="index.html">
             <img class ="logo" src ="images/footer-logo.png" alt ="logo fork and spoon">
         </a>
-        <div class="header-content">
-            <ul class = "nav">
+        <div class="toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+            <div class = "nav">
                 <li class="nav-item"><a href="index.html">Acasa</a></li>
                 <li class="nav-item"><a href="about.html">Despre noi</a></li>
                 <li class="nav-item"><a id="login_btn" href="#">Login</a></li>
@@ -149,8 +151,7 @@
                         </div>
                     </li>
                 </ul>
-            </ul>
-        </div>
+            </div>
     </header>
     <div class="banner">
         <!-- Full-width images -->
@@ -184,7 +185,7 @@
                 <div class="card-menu">
                     <div class="column-item">
                         <article class="card-item">
-                            <a href="#restaurantsContainer" class="item-link" id="comfortFood">
+                            <a href="#restaurantsContainer" class="item-link" id="comfortFood" onclick="displayRestaurants(restaurants)">
                                 <div class="item-image">
                                     <img src="images/comfort-food2.jpg">
                                 </div>
@@ -222,7 +223,7 @@
                         <article class="card-item">
                             <a href="#" class="item-link" id ="sanatos">
                                 <div class="item-image">
-                                    <img src="images/healthy-salmon-collection-main-image.jpg">
+                                    <img src="images/somon.jpg">
                                 </div>
                                 <div class="item-content">
                                     <h4>Alege sanatos</h4>
@@ -263,6 +264,7 @@
                 </div>
             </div>
         </div>
+        <div id ="menuContainer"></div>
         <div class="kitchen-options" id="kitchens">
             <div class="options-title">Bucatarii si feluri de mancare populare</div>
             <div class="content-menu">
