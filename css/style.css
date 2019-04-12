@@ -290,7 +290,9 @@ form.search button:hover {
     box-shadow: 0 0 5px 8px rgba(255,255, 255, 0.15);
 }
 
-
+li#bars_action{
+    display:none;
+}
 
 /* --------------------------
   Media Queries
@@ -306,9 +308,19 @@ form.search button:hover {
     }
 
     .main-header {
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction:column;
+    }
+
+    ul.nav {
+        margin: 0 auto;
+    }
+
+
+    ul.nav li a{
+        text-align: center;
+        width:100%;
+        display:block;
     }
     .nav {
         flex-direction: column;
@@ -345,6 +357,35 @@ form.search button:hover {
         padding: 15px 0;
         justify-content: center;
 
+    }
+}
+@media (min-width: 300px) {
+    .main-header,
+    .nav,
+    .col-item,
+    .main-footer {
+        display: flex;
+    }
+
+    /*
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }*/
+    .main-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.nav {
+        margin: 0 auto;
+    }
+
+    ul.nav li a {
+        text-align: center;
+        width: 100%;
+        display: block;
     }
 }
 @media (min-width: 1025px) {

@@ -131,7 +131,7 @@ console.log(restaurants.restaurants[i].menu)
             document.querySelector('#menuContainer').innerHTML +=
                 `<div class='column-item' id='${restaurants.restaurants[i].id}'>
                             <article class='card-item'>
-                                <div class='item-content'><h4> ${restaurants.restaurants[i].menu[i].Paste}</h4></div>
+                                <div class='item-content'><h4> ${restaurants.restaurants[i].menu['Paste']}</h4></div>
                                     <div class='item-image'><img src='${restaurants.restaurants[i].icon}'></div>
                                      <div class = 'item-content'><p>" ${restaurants.restaurants[i].deal} </p> </div></article> </div>`
         }
@@ -140,3 +140,36 @@ console.log(restaurants.restaurants[i].menu)
     }
 
 }
+// For the responsive nav
+// Phase one on window resize
+window.onresize = ()=>{
+    let windowWidth = window.innerWidth;
+
+    for(let i = 0; i<document.querySelectorAll('ul.nav li.nav-item').length; i++){
+        if(windowWidth <= 1020) {
+            document.querySelectorAll('ul.nav li.nav-item')[0].style.display = "block";
+            document.querySelectorAll('ul.nav li.nav-item')[0].style.marginTop = "-20px";
+            document.querySelectorAll('ul.nav li.nav-item')[i].style.display = "none";
+            document.querySelector('ul.nav ul#myCart').style.display = "none";
+        }else{
+            document.querySelectorAll('ul.nav li.nav-item')[0].style.display ="none";
+            document.querySelectorAll('ul.nav li.nav-item')[i].style.display = "block";
+            document.querySelector('ul.nav ul#myCart').style.display = "block";
+        }
+    }
+};
+
+// Phase two on clicking the bars_change button
+//When we click on the bars_change button we want the nav to display either block or none depending on the state
+document.querySelectorAll('ul.nav li.nav-item')[0].addEventListener('click', ()=>{
+    for(let i = 0; i<document.querySelectorAll('ul.nav li.nav-item').length; i++){
+        if(document.querySelectorAll('ul.nav li.nav-item')[i+1].style.display === "none"){
+            document.querySelectorAll('ul.nav li.nav-item')[i+1].style.display = "block";
+            document.querySelector('ul.nav ul#myCart').style.display = "block";
+        }else{
+            document.querySelectorAll('ul.nav li.nav-item')[i+1].style.display = "none";
+            document.querySelector('ul.nav ul#myCart').style.display = "none";
+        }
+    }
+
+});
