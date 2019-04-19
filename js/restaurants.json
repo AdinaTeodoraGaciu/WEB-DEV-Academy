@@ -4,51 +4,7 @@
     "id":"gusto",
     "categories":["pizza","pasta","fast-food","italiana","comfort-food"],
     "icon":"images/pizzaIbiza.jpg",
-    "deal":"La 3 pizza primesti o portie de paste!",
-    "menu":
-           {"Pizza":
-                    [{
-                      "denumire":"Margherita",
-                      "compozitie":"aluat, sos rosii, mozzarella",
-                      "pret":"23.00",
-                      "img":"images/pizza.jpg"
-                     },
-                      {
-                        "denumire":"Calzone",
-                        "compozitie":"aluat, sos rosii,mozzarella, masline, sunca presata, ardei gras",
-                        "pret":"25.00",
-                        "img":"images/pizza.jpg"
-                      },
-                      {
-                        "denumire": "Gusto",
-                        "compozitie":"aluat, sos rosii,mozzarella, masline, salam picant, ciuperci",
-                        "pret":"20.00",
-                        "img":"images/pizza.jpg"
-                      }
-                    ],
-
-            "Paste":[
-                    {
-                      "denumire": "Carbonara",
-                      "compozitie":"penne, smantana,ou, bacon",
-                      "pret":"27.00",
-                      "img":"images/paste.jpg"
-                    },
-                    {
-                      "denumire": "Bolognese",
-                      "compozitie":"penne, sos bolognese",
-                      "pret":"30.00",
-                      "img":"images/paste.jpg"
-                    },
-                    {
-                      "denumire": "Arrabbiata",
-                      "compozitie":"penne,ardei iute, ulei masline",
-                      "pret":"25.00",
-                      "img":"images/paste.jpg"
-                    }
-
-
-            ]}
+    "deal":"La 3 pizza primesti o portie de paste!"
 
   },
   {
@@ -56,59 +12,14 @@
     "id":"kfc",
     "categories":["fast-food","prietenii","birou","comfort-food"],
     "icon":"images/bucketcorbin.jpg",
-    "deal":"Cartofi prajiti la numai 2 lei!",
-    "menu":
-          {"Smart":
-                [{
-                  "denumire":"Student Box",
-                  "compozitie":"crispy strips, cartofi prajiti, cola",
-                  "pret":"26.00",
-                  "img":"images/student.jpg"
-                },
-                  {
-                    "denumire":"Corbin",
-                    "compozitie":"crispy, strips, cartofi prajiti, sos Glen, cola",
-                    "pret":"45.00",
-                    "img":"images/bucketcorbin.jpg"
-                  }
-                ]
-          }
+    "deal":"Cartofi prajiti la numai 2 lei!"
   },
   {
     "name":"El Greco",
     "id":"greco",
     "categories":["friptura","sanatos","greceasca"],
     "icon":"images/elgreco.jpg",
-    "deal":"Livrare gratuita la minim 30 de lei comanda!",
-    "menu": {
-              "Peste": [
-                {
-                  "denumire": "Somon ",
-                  "compozitie": "somon, legume natur, foccacia",
-                  "pret": "35.00",
-                  "img": "images/somon.jpg"
-                },
-                {
-                  "denumire": "Pastrav",
-                  "compozitie": "pastrav la gratar, orez salbatic",
-                  "pret": "45.00",
-                  "img": "images/pastrav.jpg"
-                }
-              ],
-            "Porc":[
-                  {"denumire": "Escalop",
-                  "compozitie": "cotlet de porc, sos rosii cu ciuperci, foccacia",
-                  "pret": "35.00",
-                  "img": "images/somon.jpg"
-                  },
-                  {
-                    "denumire": "Snitel",
-                    "compozitie": "muschi de porc,parmezan , cartofi prajiti",
-                    "pret": "35.00",
-                    "img": "images/somon.jpg"
-                  }
-              ]
-       }
+    "deal":"Livrare gratuita la minim 30 de lei comanda!"
 
   }
 

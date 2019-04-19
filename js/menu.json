@@ -1,0 +1,83 @@
+{"menu":[
+  {
+    "gusto": [
+      {
+        "denumire": " Pizza Margherita",
+        "compozitie": "aluat, sos rosii, mozzarella",
+        "pret": "23.00",
+        "img": "images/pizza.jpg"
+      },
+      {
+        "denumire": " Pizza Calzone",
+        "compozitie": "aluat, sos rosii,mozzarella, masline, sunca presata, ardei gras",
+        "pret": "25.00",
+        "img": "images/pizza.jpg"
+      },
+      {
+        "denumire": "Pizza Gusto",
+        "compozitie": "aluat, sos rosii,mozzarella, masline, salam picant, ciuperci",
+        "pret": "20.00",
+        "img": "images/pizza.jpg"
+      },
+      {
+        "denumire": " Paste Carbonara",
+        "compozitie":"penne, smantana,ou, bacon",
+        "pret":"27.00",
+        "img":"images/paste.jpg"
+      },
+      {
+        "denumire": "Paste Bolognese",
+        "compozitie":"penne, sos bolognese",
+        "pret":"30.00",
+        "img":"images/paste.jpg"
+      },
+      {
+        "denumire": "Paste Arrabbiata",
+        "compozitie":"penne,ardei iute, ulei masline",
+        "pret":"25.00",
+        "img":"images/paste.jpg"
+      }
+    ]
+  },
+
+  {  "kfc":
+          [{
+            "denumire":" Smart Student Box",
+            "compozitie":"crispy strips, cartofi prajiti, cola",
+            "pret":"26.00",
+            "img":"images/student.jpg"
+          },
+            {
+              "denumire":"Bucket Corbin",
+              "compozitie":"crispy, strips, cartofi prajiti, sos Glen, cola",
+              "pret":"45.00",
+              "img":"images/bucketcorbin.jpg"
+            }
+        ]},
+  { "greco": [
+            {
+              "denumire": "Somon ",
+              "compozitie": "somon, legume natur, foccacia",
+              "pret": "35.00",
+              "img": "images/somon.jpg"
+            },
+            {
+              "denumire": "Pastrav",
+              "compozitie": "pastrav la gratar, orez salbatic",
+              "pret": "45.00",
+              "img": "images/pastrav.jpg"
+            },
+            {"denumire": "Escalop de porc",
+              "compozitie": "cotlet de porc, sos rosii cu ciuperci, foccacia",
+              "pret": "35.00",
+              "img": "images/somon.jpg"
+            },
+            {
+              "denumire": "Snitel de porc",
+              "compozitie": "muschi de porc,parmezan , cartofi prajiti",
+              "pret": "35.00",
+              "img": "images/somon.jpg"
+            }
+      ]}
+
+]}
