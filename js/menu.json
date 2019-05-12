@@ -1,83 +1,87 @@
-{"menu":[
-  {
-    "gusto": [
-      {
+{"menus":[
+       {"id":1,
         "denumire": " Pizza Margherita",
         "compozitie": "aluat, sos rosii, mozzarella",
         "pret": "23.00",
-        "img": "images/pizza.jpg"
+        "img": "images/pizza.jpg",
+        "restaurantId":"gusto"
       },
-      {
+      { "id":2,
         "denumire": " Pizza Calzone",
         "compozitie": "aluat, sos rosii,mozzarella, masline, sunca presata, ardei gras",
         "pret": "25.00",
-        "img": "images/pizza.jpg"
+        "img": "images/pizza.jpg",
+        "restaurantId":"gusto"
       },
-      {
+      { "id":3,
         "denumire": "Pizza Gusto",
         "compozitie": "aluat, sos rosii,mozzarella, masline, salam picant, ciuperci",
         "pret": "20.00",
-        "img": "images/pizza.jpg"
+        "img": "images/pizza.jpg",
+        "restaurantId":"gusto"
       },
-      {
+      { "id":4,
         "denumire": " Paste Carbonara",
         "compozitie":"penne, smantana,ou, bacon",
         "pret":"27.00",
-        "img":"images/paste.jpg"
+        "img":"images/paste.jpg",
+        "restaurantId":"gusto"
       },
-      {
+      { "id":5,
         "denumire": "Paste Bolognese",
         "compozitie":"penne, sos bolognese",
         "pret":"30.00",
-        "img":"images/paste.jpg"
+        "img":"images/paste.jpg",
+        "restaurantId":"gusto"
       },
-      {
+      { "id":6,
         "denumire": "Paste Arrabbiata",
         "compozitie":"penne,ardei iute, ulei masline",
         "pret":"25.00",
-        "img":"images/paste.jpg"
+        "img":"images/paste.jpg",
+        "restaurantId":"gusto"
+      },
+
+      { "id":7,
+        "denumire":" Smart Student Box",
+        "compozitie":"crispy strips, cartofi prajiti, cola",
+        "pret":"26.00",
+        "img":"images/student.jpg",
+        "restaurantId":"kfc"
+      },
+      { "id":8,
+       "denumire":"Bucket Corbin",
+       "compozitie":"crispy, strips, cartofi prajiti, sos Glen, cola",
+       "pret":"45.00",
+       "img":"images/bucketcorbin.jpg",
+        "restaurantId":"kfc"
+      },
+      { "id":9,
+        "denumire": "Somon ",
+        "compozitie": "somon, legume natur, foccacia",
+        "pret": "35.00",
+        "img": "images/somon.jpg",
+        "restaurantId":"greco"
+      },
+      { "id":10,
+        "denumire": "Pastrav",
+        "compozitie": "pastrav la gratar, orez salbatic",
+        "pret": "45.00",
+        "img": "images/pastrav.jpg",
+        "restaurantId":"greco"
+      },
+      { "id":11,
+        "denumire": "Escalop de porc",
+        "compozitie": "cotlet de porc, sos rosii cu ciuperci, foccacia",
+        "pret": "35.00",
+        "img": "images/somon.jpg",
+        "restaurantId":"greco"
+      },
+      { "id":12,
+        "denumire": "Snitel de porc",
+        "compozitie": "muschi de porc,parmezan , cartofi prajiti",
+        "pret": "35.00",
+        "img": "images/somon.jpg",
+        "restaurantId":"greco"
       }
-    ]
-  },
-
-  {  "kfc":
-          [{
-            "denumire":" Smart Student Box",
-            "compozitie":"crispy strips, cartofi prajiti, cola",
-            "pret":"26.00",
-            "img":"images/student.jpg"
-          },
-            {
-              "denumire":"Bucket Corbin",
-              "compozitie":"crispy, strips, cartofi prajiti, sos Glen, cola",
-              "pret":"45.00",
-              "img":"images/bucketcorbin.jpg"
-            }
-        ]},
-  { "greco": [
-            {
-              "denumire": "Somon ",
-              "compozitie": "somon, legume natur, foccacia",
-              "pret": "35.00",
-              "img": "images/somon.jpg"
-            },
-            {
-              "denumire": "Pastrav",
-              "compozitie": "pastrav la gratar, orez salbatic",
-              "pret": "45.00",
-              "img": "images/pastrav.jpg"
-            },
-            {"denumire": "Escalop de porc",
-              "compozitie": "cotlet de porc, sos rosii cu ciuperci, foccacia",
-              "pret": "35.00",
-              "img": "images/somon.jpg"
-            },
-            {
-              "denumire": "Snitel de porc",
-              "compozitie": "muschi de porc,parmezan , cartofi prajiti",
-              "pret": "35.00",
-              "img": "images/somon.jpg"
-            }
-      ]}
-
 ]}
